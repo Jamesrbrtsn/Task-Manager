@@ -1,9 +1,11 @@
 import React from 'react';
+import './Menu.css';
 
-const Menu = (props) => {
+const Menu = ({functions}) => {
     return (
-        <div>
-            Menu
+        <div className="top-bar">
+            <div onClick={functions.F}>F</div>
+            <div onClick={functions.Nc}>Nc</div>
         </div>
     )
 }
